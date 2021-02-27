@@ -16,6 +16,7 @@ const push_key = process.env.PUSH_KEY
 
 // 京东脚本文件
 const js_url = 'https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js'
+const js_url1 = 'https://raw.githubusercontent.com/jinboyigu/lazy_script/master/src/jd/sign/shop.js'
 // 下载脚本路劲
 const js_path = './JD_DailyBonus.js'
 // 脚本执行输出路劲
@@ -107,7 +108,7 @@ function main() {
   }
 
   // 1、下载脚本
-  download(js_url, './').then(res=>{
+  download(js_url,const js_url1 './').then(res=>{
     // 2、替换cookie
     setupCookie()
     // 3、执行脚本
